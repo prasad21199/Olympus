@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IceHRM.GenericUtils
+namespace IceHRM.PageObjects.BasicPages
 {
-    public class BaseClass
+    class LoginPage
     {
-
     }
 }

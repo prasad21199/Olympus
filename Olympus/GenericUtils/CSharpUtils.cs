@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace IceHRM.GenericUtils
 {
-    public class BaseClass
+    class CSharpUtils
     {
-
     }
 }

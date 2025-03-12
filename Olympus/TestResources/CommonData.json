@@ -1,0 +1,6 @@
+﻿{
+    "browser": "chrome",
+    "url": "https://icehrmpro.gamonoid.com/login.php?logout=1",
+    "username": "admin",
+    "password" :  "admin"
+}
