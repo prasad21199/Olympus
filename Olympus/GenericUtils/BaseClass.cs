@@ -65,6 +65,7 @@ namespace IceHRM.GenericUtils
         public void Logout()
         {
             string methodName = TestContext.CurrentContext.Test.Name;
+            var stacktrace = TestContext.CurrentContext.Result.StackTrace;
             test.Log(Status.Info, methodName + " started ");
             if(TestContext.CurrentContext.Result.Outcome.Status == TestStatus.Failed)
             {

@@ -22,7 +22,7 @@ namespace RealProject.Pom_Repository
         private IWebElement middlename;
         [FindsBy(How = How.XPath, Using = "//input[@id='last_name']")]
         private IWebElement lastname;
-        [FindsBy(How = How.XPath, Using = "//input[@id='rc_select_1']")]
+        [FindsBy(How = How.XPath, Using = "//div[@class='ant-select-selector']//input[@id='rc_select_1']")]
         private IWebElement nationality;
         [FindsBy(How = How.XPath, Using = "//input[@id='birthday']")]
         private IWebElement birthday;
@@ -49,7 +49,7 @@ namespace RealProject.Pom_Repository
         [FindsBy(How = How.XPath, Using = "//input[@id='ssn_num']")]
         private IWebElement socialinsurance;
         [FindsBy(How = How.XPath, Using = "//input[@id='nic_num']")]
-        private IWebElement nationalid;
+        private IWebElement national_id;
         [FindsBy(How = How.XPath, Using = "//span[text()='Next']")]
         private IWebElement next;
         [FindsBy(How = How.XPath, Using = "//span[text()='Save']")]
@@ -72,16 +72,10 @@ namespace RealProject.Pom_Repository
         public IWebElement Immigrationstatus { get => immigrationstatus; set => immigrationstatus = value; }
         public IWebElement Personaltax { get => personaltax; set => personaltax = value; }
         public IWebElement Socialinsurance { get => socialinsurance; set => socialinsurance = value; }
-        public IWebElement Nationalid { get => nationalid; set => nationalid = value; }
+        public IWebElement Nationalid { get => national_id; set => national_id = value; }
         public IWebElement Next { get => next; set => next = value; }
         public IWebElement Country { get => country; set => country = value; }
         public IWebElement Save { get => save; set => save = value; }
-        public void selectNationality(string nationality)
-        {
-            Nationality.Click();
-
-
-        }
     }
     
 }
