@@ -22,10 +22,22 @@ namespace Olympus.PageObjects.BasicPages
         private IWebElement user;
         [FindsBy(How = How.XPath, Using = "//a[@id='projectsLink']")]
         private IWebElement projects ;
+        [FindsBy(How = How.XPath, Using = "//span[text()='IceHrm ']")]
+        private IWebElement logOutBtn ;
+        [FindsBy(How = How.XPath, Using = "//a[text()='Sign out']")]
+        private IWebElement signOutBtn ;
+        
 
         public IWebElement People { get => people; set => people = value; }
         public IWebElement Company { get => company; set => company = value; }
         public IWebElement User { get => user; set => user = value; }
         public IWebElement Projects { get => projects; set => projects = value; }
+        public IWebElement LogOutBtn { get => logOutBtn; set => logOutBtn = value; }
+        public IWebElement SignOutBtn { get => signOutBtn; set => signOutBtn = value; }
+        public void LogoutApp()
+        {
+            logOutBtn.Click();
+            signOutBtn.Click();
+        }
     }
 }

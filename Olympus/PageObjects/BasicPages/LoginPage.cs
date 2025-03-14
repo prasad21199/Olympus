@@ -8,7 +8,7 @@ using SeleniumExtras.PageObjects;
 
 namespace Olympus.PageObjects.BasicPages
 {
-    class LoginPage
+   public class LoginPage
     {
         public LoginPage(IWebDriver driver)
         {
