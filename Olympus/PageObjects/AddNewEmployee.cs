@@ -15,33 +15,33 @@ namespace RealProject.Pom_Repository
             PageFactory.InitElements(driver, this);
         }
         [FindsBy(How = How.XPath, Using = "//input[@id='employee_id']")]
-        private IWebElement employeenumber;
+        private IWebElement emplNoTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='first_name']")]
-             private IWebElement firstname;
+         private IWebElement fnTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='middle_name']")]
-        private IWebElement middlename;
+        private IWebElement mnTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='last_name']")]
-        private IWebElement lastname;
+        private IWebElement lnTf;
         [FindsBy(How = How.XPath, Using = "//div[@class='ant-select-selector']//input[@id='rc_select_1']")]
-        private IWebElement nationality;
+        private IWebElement nationalityDrp;
         [FindsBy(How = How.XPath, Using = "//input[@id='birthday']")]
-        private IWebElement birthday;
+        private IWebElement bdayCalender;
         [FindsBy(How = How.XPath, Using = "//input[@id='rc_select_2']")]
-        private IWebElement gender;
+        private IWebElement genderDrp;
         [FindsBy(How = How.XPath, Using = "//input[@id='rc_select_3']")]
-             private IWebElement martailstatus;
+        private IWebElement martailstatusDrp;
         [FindsBy(How = How.XPath, Using = "//span[text()='Full Time Internship']")]
-        private IWebElement employmentstatus;
+        private IWebElement employmentstatusDrp;
         [FindsBy(How = How.XPath, Using = "//div[text()='QA Team']")]
-        private IWebElement department;
+        private IWebElement departmentDrp;
         [FindsBy(How = How.XPath, Using = "//div[text()='Assistant QA Engineer ']")]
-        private IWebElement jobtitle;
+        private IWebElement jobtitleDrp;
         [FindsBy(How = How.XPath, Using = "//input[@id='joined_date']")]
-        private IWebElement joineddate;
+        private IWebElement joineddateCalender;
         [FindsBy(How = How.XPath, Using = "//div[@title='(GMT 00:00) Africa/Dakar']")]
-        private IWebElement timezone;
+        private IWebElement timezoneDrp;
         [FindsBy(How = How.XPath, Using = "//div[@title='India']")]
-        private IWebElement country;
+        private IWebElement countryDrp;
         [FindsBy(How = How.XPath, Using = "//input[@id='rc_select_5']")]
         private IWebElement immigrationstatus;
         [FindsBy(How = How.XPath, Using = "//input[@id='tax_id']")]
@@ -56,26 +56,25 @@ namespace RealProject.Pom_Repository
         private IWebElement save;
 
 
-        public IWebElement Employeenumber { get => employeenumber; set => employeenumber = value; }
-        public IWebElement Firstname { get => firstname; set => firstname = value; }
-        public IWebElement Middlename { get => middlename; set => middlename = value; }
-        public IWebElement Lastname { get => lastname; set => lastname = value; }
-        public IWebElement Nationality { get => nationality; set => nationality = value; }
-        public IWebElement Birthday { get => birthday; set => birthday = value; }
-        public IWebElement Gender { get => gender; set => gender = value; }
-        public IWebElement Martailstatus { get => martailstatus; set => martailstatus = value; }
-        public IWebElement Employmentstatus { get => employmentstatus; set => employmentstatus = value; }
-        public IWebElement Department { get => department; set => department = value; }
-        public IWebElement Jobtitle { get => jobtitle; set => jobtitle = value; }
-        public IWebElement Joineddate { get => joineddate; set => joineddate = value; }
-        public IWebElement Timezone { get => timezone; set => timezone = value; }
+        public IWebElement Employeenumber { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Firstname { get => Firstname; set => Firstname = value; }
+        public IWebElement Middlename { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Lastname { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Nationality { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Birthday { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Gender { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Martailstatus { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Employmentstatus { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Department { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Jobtitle { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Joineddate { get => Employeenumber; set => Employeenumber = value; }
+        public IWebElement Timezone { get => Employeenumber; set => Employeenumber = value; }
         public IWebElement Immigrationstatus { get => immigrationstatus; set => immigrationstatus = value; }
-        public IWebElement Personaltax { get => personaltax; set => personaltax = value; }
         public IWebElement Socialinsurance { get => socialinsurance; set => socialinsurance = value; }
         public IWebElement Nationalid { get => national_id; set => national_id = value; }
         public IWebElement Next { get => next; set => next = value; }
-        public IWebElement Country { get => country; set => country = value; }
         public IWebElement Save { get => save; set => save = value; }
+        public IWebElement Personaltax { get => personaltax; set => personaltax = value; }
     }
     
 }
