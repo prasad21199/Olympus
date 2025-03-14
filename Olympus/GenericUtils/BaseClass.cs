@@ -32,7 +32,7 @@ namespace IceHRM.GenericUtils
         public void OpenBrowser()
         {
             Console.WriteLine("Connecting to database ...");
-            ExtentSparkReporter spark = new ExtentSparkReporter(IPathConstant.REPORT_PATH+csharp.GetCurrentDate());
+            ExtentSparkReporter spark = new ExtentSparkReporter(IPathConstant.REPORT_PATH+csharp.GetCurrentDate()+".html");
             spark.Config.DocumentTitle = this.GetType().Name;
             spark.Config.ReportName = "Extent Report";
             spark.Config.Theme = AventStack.ExtentReports.Reporter.Config.Theme.Dark;
