@@ -12,7 +12,7 @@ namespace Olympus.TestScripts
         [Test]
         public void Test()
         {
-            Console.WriteLine("Jenkins success");
+            Console.WriteLine("Prasadk Hit");
         }
     }
 }
