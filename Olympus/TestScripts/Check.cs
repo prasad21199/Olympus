@@ -12,7 +12,7 @@ namespace Olympus.TestScripts
         [Test]
         public void Test()
         {
-            Console.WriteLine("Prasadk Hit");
+            Console.WriteLine("Lets break the product...");
         }
     }
 }
