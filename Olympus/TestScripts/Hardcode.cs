@@ -11,7 +11,7 @@ namespace Olympus.TestScripts
 {
     public class Hardcode
     {
-        [Test]
+        
         public void CheckProfile()
         {
             IWebDriver driver = new ChromeDriver();

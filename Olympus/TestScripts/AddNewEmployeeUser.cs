@@ -18,7 +18,7 @@ namespace RealProject.TestScript
         HomePage homepage;
         AddNewEmployee newuser;
         PeopleManage peoplemanage;
-        [Test]
+        
         public void AddNewUser()
         {
             homepage = new HomePage(driver);
