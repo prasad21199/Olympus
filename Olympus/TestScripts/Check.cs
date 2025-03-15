@@ -12,7 +12,7 @@ namespace Olympus.TestScripts
         [Test]
         public void Test()
         {
-            Console.WriteLine("If you could smell what the rock is cooking..");
+            Console.WriteLine("Hlo Ashwitha...");
         }
     }
 }
