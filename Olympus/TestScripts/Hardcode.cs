@@ -32,8 +32,7 @@ namespace Olympus.TestScripts
             //Thread.Sleep(1000);
             //driver.FindElement(nation).SendKeys("Other" + Keys.Enter);
             //Thread.Sleep(1000);
-            Console.WriteLine("CheckProfile..");
-
+            Console.WriteLine("Bharath");
         }
     }
 }
