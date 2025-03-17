@@ -1,4 +1,7 @@
-﻿namespace Olympus.PageObjects.BasicPages
+﻿using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
+
+namespace Olympus.PageObjects.BasicPages
 {
     public class LoginPage
     {

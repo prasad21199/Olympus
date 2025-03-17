@@ -1,4 +1,11 @@
-﻿using Olympus.PageObjects.BasicPages;
+﻿using AventStack.ExtentReports.Reporter;
+using AventStack.ExtentReports;
+using NUnit.Framework.Interfaces;
+using Olympus.PageObjects.BasicPages;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
+using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium;
 
 namespace IceHRM.GenericUtils
 {

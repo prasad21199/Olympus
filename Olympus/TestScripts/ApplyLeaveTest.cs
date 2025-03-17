@@ -12,7 +12,10 @@ namespace Olympus.TestScripts
             hp.LeaveMangementLink.Click();
             LeaveManagementPage leave = new LeaveManagementPage(driver);
             web.SetSelectByIndex(leave.LeaveTypeDrpDwn, 0);
-
+            leave.StartDate("2025", "Apr", "12");
+            leave.LeaveEndDate.SendKeys("2025-04-01");
+            leave.ReasonTeaxArea.SendKeys("I need to take rest..");
+            leave.ContinueBtn.Click();
         }
     }
 }

@@ -1,4 +1,10 @@
-﻿namespace IceHRM.GenericUtils
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Support.UI;
+using SeleniumExtras.WaitHelpers;
+using System.Collections.ObjectModel;
+
+namespace IceHRM.GenericUtils
 {
     public class WebDriverUtils
     {

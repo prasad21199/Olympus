@@ -15,6 +15,10 @@
         private IWebElement leaveStratDate;
         [FindsBy(How = How.XPath, Using = "//label[text()='Leave End Date']/..//i")]
         private IWebElement leaveEndDate;
+        [FindsBy(How = How.XPath, Using = "//textarea[@id='details']")]
+        private IWebElement reasonTeaxArea;
+        [FindsBy(How = How.XPath, Using = "Continue")]
+        private IWebElement continueBtn;
         [FindsBy(How = How.XPath, Using = "//div[@class='datepicker-years']//span")]
         private IReadOnlyCollection<IWebElement> yearsPick;
         [FindsBy(How = How.XPath, Using = "//div[@class='datepicker-months']//span")]
@@ -29,6 +33,8 @@
         public IReadOnlyCollection<IWebElement> YearsPick { get => yearsPick; set => yearsPick = value; }
         public IReadOnlyCollection<IWebElement> MonthPick { get => monthPick; set => monthPick = value; }
         public IReadOnlyCollection<IWebElement> DayPick { get => dayPick; set => dayPick = value; }
+        public IWebElement ReasonTeaxArea { get => reasonTeaxArea; set => reasonTeaxArea = value; }
+        public IWebElement ContinueBtn { get => continueBtn; set => continueBtn = value; }
 
         public void StartDate(string year, string month, string day)
         {
