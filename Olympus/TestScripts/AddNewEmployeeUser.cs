@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IceHRM.GenericUtils;
+﻿using IceHRM.GenericUtils;
 using Olympus.PageObjects.BasicPages;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using RealProject.Pom_Repository;
 
 namespace RealProject.TestScript

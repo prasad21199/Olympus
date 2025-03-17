@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
-
-namespace Olympus.PageObjects.BasicPages
+﻿namespace Olympus.PageObjects.BasicPages
 {
-   public class HomePage
+    public class HomePage
     {
         public HomePage(IWebDriver driver)
         {
@@ -21,16 +13,16 @@ namespace Olympus.PageObjects.BasicPages
         [FindsBy(How = How.XPath, Using = "//a[@id='usersLink']")]
         private IWebElement user;
         [FindsBy(How = How.XPath, Using = "//a[@id='projectsLink']")]
-        private IWebElement projects ;
+        private IWebElement projects;
         [FindsBy(How = How.XPath, Using = "//span[text()='IceHrm ']")]
-        private IWebElement logOutBtn ;
+        private IWebElement logOutBtn;
         [FindsBy(How = How.XPath, Using = "//a[text()='Sign out']")]
-        private IWebElement signOutBtn ;
+        private IWebElement signOutBtn;
 
         [FindsBy(How = How.XPath, Using = "//span[text()='Leave']")]
-        private IWebElement LeaveMajorTab;
+        private IWebElement leaveMajorTab;
         [FindsBy(How = How.XPath, Using = "//a/i[@class='fa fa-share-alt']")]
-        private IWebElement LeaveMangementLink;
+        private IWebElement leaveMangementLink;
 
 
         public IWebElement People { get => people; set => people = value; }
@@ -39,6 +31,9 @@ namespace Olympus.PageObjects.BasicPages
         public IWebElement Projects { get => projects; set => projects = value; }
         public IWebElement LogOutBtn { get => logOutBtn; set => logOutBtn = value; }
         public IWebElement SignOutBtn { get => signOutBtn; set => signOutBtn = value; }
+        public IWebElement LeaveMajorTab { get => leaveMajorTab; set => leaveMajorTab = value; }
+        public IWebElement LeaveMangementLink { get => leaveMangementLink; set => leaveMangementLink = value; }
+
         public void LogoutApp()
         {
             logOutBtn.Click();

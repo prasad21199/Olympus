@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
-
-namespace RealProject.Pom_Repository
+﻿namespace RealProject.Pom_Repository
 {
     class AddNewEmployee
     {
@@ -17,7 +9,7 @@ namespace RealProject.Pom_Repository
         [FindsBy(How = How.XPath, Using = "//input[@id='employee_id']")]
         private IWebElement emplNoTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='first_name']")]
-         private IWebElement fnTf;
+        private IWebElement fnTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='middle_name']")]
         private IWebElement mnTf;
         [FindsBy(How = How.XPath, Using = "//input[@id='last_name']")]
@@ -76,5 +68,5 @@ namespace RealProject.Pom_Repository
         public IWebElement Save { get => save; set => save = value; }
         public IWebElement Personaltax { get => personaltax; set => personaltax = value; }
     }
-    
+
 }

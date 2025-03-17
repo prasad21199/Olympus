@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
-
-namespace RealProject.Pom_Repository
+﻿namespace RealProject.Pom_Repository
 {
     class CompanyDetails
     {

@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using ClosedXML.Excel;
-
-namespace IceHRM.GenericUtils
+﻿namespace IceHRM.GenericUtils
 {
-   public class ExcelUtils
+    public class ExcelUtils
     {
         /// <summary>
         /// this method is to get the data from excel

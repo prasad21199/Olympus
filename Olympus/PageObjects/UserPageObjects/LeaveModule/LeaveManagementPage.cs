@@ -1,12 +1,4 @@
-﻿using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Olympus.PageObjects.UserPageObjects.LeaveModule
+﻿namespace Olympus.PageObjects.UserPageObjects.LeaveModule
 {
     public class LeaveManagementPage
     {
@@ -38,34 +30,33 @@ namespace Olympus.PageObjects.UserPageObjects.LeaveModule
         public IReadOnlyCollection<IWebElement> MonthPick { get => monthPick; set => monthPick = value; }
         public IReadOnlyCollection<IWebElement> DayPick { get => dayPick; set => dayPick = value; }
 
-        public void StartDate(string year , string month , string day)
+        public void StartDate(string year, string month, string day)
         {
             leaveStratDate.Click();
-            foreach(WebElement year_ in yearsPick)
+            foreach (WebElement year_ in yearsPick)
             {
-                if(year_.Equals(year))
+                if (year_.Equals(year))
                 {
                     year_.Click();
                     break;
                 }
             }
-            foreach(WebElement month_ in monthPick)
+            foreach (WebElement month_ in monthPick)
             {
-                if(month_.Equals(month))
+                if (month_.Equals(month))
                 {
                     month_.Click();
                     break;
                 }
             }
-            foreach(WebElement day_ in dayPick)
+            foreach (WebElement day_ in dayPick)
             {
-                if(day_.Equals(month))
+                if (day_.Equals(month))
                 {
                     day_.Click();
                     break;
                 }
             }
-
         }
     }
 }
