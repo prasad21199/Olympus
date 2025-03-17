@@ -1,11 +1,11 @@
-﻿using AventStack.ExtentReports.Reporter;
-using AventStack.ExtentReports;
+﻿using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
 using NUnit.Framework.Interfaces;
 using Olympus.PageObjects.BasicPages;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium;
 
 namespace IceHRM.GenericUtils
 {
@@ -26,7 +26,7 @@ namespace IceHRM.GenericUtils
         public void OpenBrowser()
         {
             Console.WriteLine("Connecting to database ...");
-            ExtentSparkReporter spark = new ExtentSparkReporter(csharp.GetFullPath(IPathConstant.REPORT_PATH) + csharp.GetCurrentDate() + ".html");
+            ExtentSparkReporter spark = new ExtentSparkReporter(csharp.GetFullPathReport(csharp.GetCurrentDate()) + ".html");
             spark.Config.DocumentTitle = this.GetType().Name;
             spark.Config.ReportName = "Extent Report";
             spark.Config.Theme = AventStack.ExtentReports.Reporter.Config.Theme.Dark;

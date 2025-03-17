@@ -4,6 +4,7 @@ namespace IceHRM.GenericUtils
 {
     public class ExcelUtils
     {
+        public CSharpUtils csharp;
         /// <summary>
         /// this method is to get the data from excel
         /// </summary>
@@ -13,7 +14,7 @@ namespace IceHRM.GenericUtils
         /// <returns></returns>
         public string GetExcelData(string sheetname, int row, int cell)
         {
-            CSharpUtils csharp = new CSharpUtils();
+            csharp = new CSharpUtils();
             string path = csharp.GetFullPath(IPathConstant.EXCEL_PATH);
             XLWorkbook wb = new XLWorkbook(path);
             IXLWorksheet sheet = wb.Worksheet(sheetname);
@@ -28,7 +29,7 @@ namespace IceHRM.GenericUtils
         /// <param name="value"></param>
         public void SetExcelData(string sheetname, int row, int cell, string value)
         {
-            string path = IPathConstant.EXCEL_PATH;
+            string path = csharp.GetFullPath(IPathConstant.EXCEL_PATH);
             XLWorkbook wb = new XLWorkbook(path);
             IXLWorksheet sheet = wb.Worksheet(sheetname);
             sheet.Row(row).Cell(cell).SetValue(value);

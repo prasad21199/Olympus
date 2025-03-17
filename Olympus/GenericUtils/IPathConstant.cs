@@ -2,10 +2,10 @@
 {
     interface IPathConstant
     {
-        const string JSON_PATH = @"./TestResources/CommonData.json";
-        const string EXCEL_PATH = @"./TestResources/TestData.xlsx";
+        const string JSON_PATh = "CommonData.json";
+        const string EXCEL_PATH = "TestData.xlsx";
         const int IMPLICIT_WAIT = 10;
         const int EXPLICIT_WAIT = 10;
-        const string REPORT_PATH = @"./Report";
+        //const string REPORT_PATH = CSharpUtils.GetFullPathReport("");
     }
 }

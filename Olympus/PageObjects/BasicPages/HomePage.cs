@@ -46,7 +46,8 @@ namespace Olympus.PageObjects.BasicPages
         {
             logOutBtn.Click();
             signOutBtn.Click();
-        }public void userLogoutApp(string text)
+        }
+        public void userLogoutApp(string text)
         {
             driver.FindElement(By.XPath("//span[text()='" + text + "']")).Click();
             signOutBtn.Click();

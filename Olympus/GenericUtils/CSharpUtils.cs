@@ -11,9 +11,17 @@
         {
             return DateTime.Now.ToString("dd MM yyyy HH mm ss");
         }
-        public string GetFullPath(string relPath)
+        public string GetFullPath(string fileName)
         {
-            return Path.GetFullPath(relPath);
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string filePath = Path.Combine(projectDirectory, "TestResources", fileName);
+            return filePath;
+        }
+        public  string GetFullPathReport(string fileName)
+        {
+            string projectDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName;
+            string filePath = Path.Combine(projectDirectory, "Report", fileName);
+            return filePath;
         }
     }
 }
