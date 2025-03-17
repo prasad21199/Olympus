@@ -11,5 +11,9 @@
         {
             return DateTime.Now.ToString("dd MM yyyy HH mm ss");
         }
+        public string GetFullPath(string relPath)
+        {
+            return Path.GetFullPath(relPath);
+        }
     }
 }

@@ -13,7 +13,8 @@ namespace IceHRM.GenericUtils
         /// <returns></returns>
         public string GetExcelData(string sheetname, int row, int cell)
         {
-            string path = IPathConstant.EXCEL_PATH;
+            CSharpUtils csharp = new CSharpUtils();
+            string path = csharp.GetFullPath(IPathConstant.EXCEL_PATH);
             XLWorkbook wb = new XLWorkbook(path);
             IXLWorksheet sheet = wb.Worksheet(sheetname);
             return sheet.Row(row).Cell(cell).GetValue<string>();

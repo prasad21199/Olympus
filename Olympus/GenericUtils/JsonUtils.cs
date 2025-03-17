@@ -11,7 +11,8 @@ namespace IceHRM.GenericUtils
         /// <returns></returns>
         public string GetJsonData(string key)
         {
-            string path = IPathConstant.JSON_PATH;
+            CSharpUtils csharp = new CSharpUtils();
+            string path = csharp.GetFullPath(IPathConstant.JSON_PATH);
             string file = File.ReadAllText(path);
             JToken jtoken = JToken.Parse(file);
             return jtoken[key].ToString();

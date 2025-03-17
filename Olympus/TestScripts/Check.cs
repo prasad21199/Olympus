@@ -2,12 +2,14 @@
 
 namespace Olympus.TestScripts
 {
-    public class Check : BaseClass
+    public class Check 
     {
         [Test]
         public void Test()
         {
-            Console.WriteLine("Happy Birthday..");
+            string path = @"./TestResources/TestData.xlsx";
+            string fullPath=Path.GetFullPath(path);
+            Console.WriteLine(fullPath);
         }
     }
 }
