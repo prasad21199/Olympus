@@ -26,7 +26,12 @@ namespace Olympus.PageObjects.BasicPages
         private IWebElement logOutBtn ;
         [FindsBy(How = How.XPath, Using = "//a[text()='Sign out']")]
         private IWebElement signOutBtn ;
-        
+
+        [FindsBy(How = How.XPath, Using = "//span[text()='Leave']")]
+        private IWebElement LeaveMajorTab;
+        [FindsBy(How = How.XPath, Using = "//a/i[@class='fa fa-share-alt']")]
+        private IWebElement LeaveMangementLink;
+
 
         public IWebElement People { get => people; set => people = value; }
         public IWebElement Company { get => company; set => company = value; }
