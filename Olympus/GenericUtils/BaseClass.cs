@@ -51,7 +51,7 @@ namespace IceHRM.GenericUtils
         {
             test = extent.CreateTest(TestContext.CurrentContext.Test.Name);
             LoginPage lp = new LoginPage(driver);
-            lp.LoginToApp(json.GetJsonData("user1"), json.GetJsonData("demouserpwd"));
+            lp.LoginToApp(json.GetJsonData("user1"), json.GetJsonData("user1pwd"));
             test.Info("Logged into  the application");
             hp = new HomePage(driver);
         }
@@ -71,7 +71,8 @@ namespace IceHRM.GenericUtils
             {
                 test.Log(Status.Info, methodName + " passed ");
             }
-            hp.LogoutApp();
+            string userName = excel.GetExcelData("user", 2, 1);
+            hp.userLogoutApp(userName);
         }
         [OneTimeTearDown]
         public void CloseBrowser()

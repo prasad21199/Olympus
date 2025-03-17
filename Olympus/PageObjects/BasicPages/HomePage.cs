@@ -5,9 +5,11 @@ namespace Olympus.PageObjects.BasicPages
 {
     public class HomePage
     {
+        private IWebDriver driver;
         public HomePage(IWebDriver driver)
         {
             PageFactory.InitElements(driver, this);
+            this.driver = driver;
         }
         [FindsBy(How = How.XPath, Using = "//a[@id='employeeLink']")]
         private IWebElement people;
@@ -27,7 +29,10 @@ namespace Olympus.PageObjects.BasicPages
         [FindsBy(How = How.XPath, Using = "//a/i[@class='fa fa-share-alt']")]
         private IWebElement leaveMangementLink;
 
-
+        public IWebElement DynamicTextXpath(string text)
+        {
+            return driver.FindElement(By.XPath("//span[text()='" + text + "']"));
+        }
         public IWebElement People { get => people; set => people = value; }
         public IWebElement Company { get => company; set => company = value; }
         public IWebElement User { get => user; set => user = value; }
@@ -37,9 +42,13 @@ namespace Olympus.PageObjects.BasicPages
         public IWebElement LeaveMajorTab { get => leaveMajorTab; set => leaveMajorTab = value; }
         public IWebElement LeaveMangementLink { get => leaveMangementLink; set => leaveMangementLink = value; }
 
-        public void LogoutApp()
+        public void adminLogoutApp()
         {
             logOutBtn.Click();
+            signOutBtn.Click();
+        }public void userLogoutApp(string text)
+        {
+            driver.FindElement(By.XPath("//span[text()='" + text + "']")).Click();
             signOutBtn.Click();
         }
     }
