@@ -22,5 +22,6 @@ namespace Olympus.PageObjects.UserPageObjects.LeaveModule
         [FindsBy(How = How.XPath, Using = "//input[@id='date_start']")]
         private IWebElement leaveStratDate;
 
+        public IWebElement LeaveStratDate { get => leaveStratDate; set => leaveStratDate = value; }
     }
 }
