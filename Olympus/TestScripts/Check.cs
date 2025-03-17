@@ -1,9 +1,4 @@
 ﻿using IceHRM.GenericUtils;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Olympus.TestScripts
 {
@@ -12,7 +7,7 @@ namespace Olympus.TestScripts
         [Test]
         public void Test()
         {
-            Console.WriteLine("Hlo Ashwitha...");
+            Console.WriteLine("Happy Birthday..");
         }
     }
 }
