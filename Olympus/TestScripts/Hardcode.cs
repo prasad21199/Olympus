@@ -1,4 +1,6 @@
 ﻿using IceHRM.GenericUtils;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 
 namespace Olympus.TestScripts
 {

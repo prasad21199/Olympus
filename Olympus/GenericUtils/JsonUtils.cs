@@ -1,4 +1,6 @@
-﻿namespace IceHRM.GenericUtils
+﻿using Newtonsoft.Json.Linq;
+
+namespace IceHRM.GenericUtils
 {
     public class JsonUtils
     {

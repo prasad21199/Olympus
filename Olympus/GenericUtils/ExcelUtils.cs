@@ -1,4 +1,6 @@
-﻿namespace IceHRM.GenericUtils
+﻿using ClosedXML.Excel;
+
+namespace IceHRM.GenericUtils
 {
     public class ExcelUtils
     {

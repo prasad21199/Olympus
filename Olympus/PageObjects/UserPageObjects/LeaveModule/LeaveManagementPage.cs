@@ -1,4 +1,7 @@
-﻿namespace Olympus.PageObjects.UserPageObjects.LeaveModule
+﻿using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
+
+namespace Olympus.PageObjects.UserPageObjects.LeaveModule
 {
     public class LeaveManagementPage
     {

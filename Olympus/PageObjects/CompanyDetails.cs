@@ -1,4 +1,7 @@
-﻿namespace RealProject.Pom_Repository
+﻿using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
+
+namespace RealProject.Pom_Repository
 {
     class CompanyDetails
     {
