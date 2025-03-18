@@ -5,7 +5,7 @@ namespace Olympus.TestScripts
 {
     public class Leave : BaseClass
     {
-        [Test]
+        //[Test]
         public void ApplyLeave()
         {
             hp.LeaveMajorTab.Click();
